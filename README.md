@@ -1,5 +1,7 @@
 # MachineLearning
-# author : sunjingpeng6@126.com 隐马尔科夫模型，数学推导见李航《统计学习方法》 第10章
+# author : sunjingpeng6@126.com 
+my_HMM.py
+隐马尔科夫模型，数学推导见李航《统计学习方法》 第10章
 代码实现李HMM的3个基本问题
  1. 概率计算问题:前向-后向算法——动态规划
  给定模型λ=(pi, A , B) , 和观测序列 O ,计算模型λ下观测序列O出现的概率P(O| λ)
