@@ -217,14 +217,6 @@ class DecisionTree():
             print('%sF->'%(indent), end='')
             self.print_tree(tree.false_branch, indent+indent)
 
-
-def calculate_variance(X):
-    """return the variance of the features in dataset X"""
-    mean = np.ones(X.shape) * X.mean(axis=0)
-    n_samples = X.shape[0]
-    variance = (1. / n_samples) * np.diag(np.dot((X-mean).T, X-mean))
-    return variance
-
 class RegressionTree(DecisionTree):
     def _calculate_variance(self, X):
         """return the variance of the features in dataset X"""
