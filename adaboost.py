@@ -4,8 +4,6 @@ import pandas as pd
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 
-from mlfromscratch.utils import Plot
-
 # decision stump used as weak classifier in this impl. of adaboost
 class DecisionStump():
     def __init__(self):
@@ -126,6 +124,3 @@ if __name__ == "__main__":
     y_pred = clf.predict(X_test)
     accuracy = np.mean(y_pred == y_test)
     print('accuracy: %.3f' %accuracy)
-
-    # Reduce dimensions to 2d using pca and plot the results
-    Plot().plot_in_2d(X_test, y_pred, title="Adaboost", accuracy=accuracy)
