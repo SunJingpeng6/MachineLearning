@@ -45,7 +45,7 @@ class Adaboost():
             # iterate through every unique feature value and see what
             # value makes the best threshold for predicting y
             for feature_i in range(n_features):
-                feature_values = np.expand_dims(X[:, feature_i], axis=1)
+                feature_values = X[:, feature_i]
                 unique_values = np.unique(feature_values)
                 # try every unique feature value as threshold
                 for threshold in unique_values:
